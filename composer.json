@@ -1,0 +1,18 @@
+{
+    "name": "korkmaz/address",
+    "autoload": {
+        "psr-4": {
+            "Korkmaz\\Address\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hakan",
+            "email": "hakan.hizmet.54.gs@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*",
+        "arrilot/dotenv-php": "^2.0"
+    }
+}
