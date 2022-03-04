@@ -1,8 +1,8 @@
 {
-    "name": "korkmaz/address",
+    "name": "icestacks/address",
     "autoload": {
         "psr-4": {
-            "Korkmaz\\Address\\": "src/"
+            "IceStacks\\Address\\": "src/"
         }
     },
     "authors": [

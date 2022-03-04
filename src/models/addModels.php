@@ -1,8 +1,8 @@
 <?php
 
-namespace Korkmaz\Address\models;
+namespace IceStacks\Address\models;
 
-use Korkmaz\Address\settings\connect;
+use IceStacks\Address\settings\connect;
 
 class addModels extends connect
 {

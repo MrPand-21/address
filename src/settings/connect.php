@@ -1,6 +1,6 @@
 <?php
 
-namespace Korkmaz\Address\settings;
+namespace IceStacks\Address\settings;
 
 use Arrilot\DotEnv\DotEnv;
 use PDO;

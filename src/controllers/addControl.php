@@ -1,8 +1,9 @@
 <?php
 
-namespace Korkmaz\Address\controllers;
+namespace IceStacks\Address\controllers;
 
-use Korkmaz\Address\models\addModels;
+
+use IceStacks\Address\models\addModels;
 
 class addControl extends addModels
 {
