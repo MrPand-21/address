@@ -1,0 +1,36 @@
+{
+   "name": "tyexpress",
+   "version": "1.0.0",
+   "description": "",
+   "main": "src/dist/index.ts",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "ts-node src/dist/index.ts",
+      "dev": "tsc -w & nodemon src/dist/index.ts",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "author": "Carabelli",
+   "license": "ISC",
+   "devDependencies": {
+      "@types/express": "^4.17.13",
+      "@types/multer": "^1.4.7",
+      "@types/node": "^16.11.10",
+      "nodemon": "^2.0.15",
+      "ts-node": "10.7.0",
+      "typescript": "4.5.2"
+   },
+   "dependencies": {
+      "connect-multiparty": "^2.2.0",
+      "expres": "^0.0.5",
+      "express": "^4.17.3",
+      "http": "^0.0.1-security",
+      "lodash": "^4.17.21",
+      "multer": "^1.4.4",
+      "multiparty": "^4.2.3",
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.13",
+      "response-type": "^1.1.5",
+      "typeorm": "0.3.5",
+      "typescript-json-serializer": "^4.1.0"
+   }
+}
