@@ -3,6 +3,7 @@ import { AddressDelete } from "../controllers/Adress/AdressDelete";
 import { AddressGetAll } from "../controllers/Adress/AddressGetAll";
 import { AddressGetById } from "../controllers/Adress/AddressGetById";
 import { AddressUpdate } from "../controllers/Adress/AddressUpdate";
+import * as multipart from "connect-multiparty";
 
 
 //for each of the routes, we need to create a new array of routes.
@@ -21,6 +22,7 @@ const AddressRoutes = [
     {
         path: '/addresses/add',
         method: 'post',
+        middleware: multipart(),
         action: AddressAdd
     },
     {
@@ -31,6 +33,7 @@ const AddressRoutes = [
     {
         path: '/addresses/update',
         method: "post",
+        middleware: multipart(),
         action: AddressUpdate
     },
 ]

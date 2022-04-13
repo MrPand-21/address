@@ -1,4 +1,3 @@
-import  * as multiparty  from 'connect-multiparty';
 import "reflect-metadata";
 import {Request, Response} from "express";
 import * as express from "express";
@@ -16,7 +15,7 @@ OrmDataSource.initialize().then(()=>{
     // find routes then add them to the app
     ApiRoutes.forEach(routes => 
         routes.forEach(route =>{
-        _express[route.method](route.path, multiparty(), (request: Request, response: Response, next: Function) => {
+        _express[route.method](route.path, route.middleware ?? [] , (request: Request, response: Response, next: Function) => {
             route.action(request, response)
                 .then(() => next)
                 .catch(err => next(err));
