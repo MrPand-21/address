@@ -18,6 +18,7 @@ export class Address {
         nullable: false,
         name: "city"
     })
+    
     city: string; //city-province
 
     @Column({
@@ -32,6 +33,12 @@ export class Address {
         name: "full_address" 
     })
     fullAddress: string; //combine full adress 1 and full adress 2
+
+    @Column("varchar", {
+        nullable: false,
+        name: "address_detail" 
+    })
+    addressDetail: string; //address detail
 
     @Column("int", {
         nullable: false,
